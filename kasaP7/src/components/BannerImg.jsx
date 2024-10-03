@@ -2,7 +2,7 @@ import img from '../assets/images/imgAccueil.png'
 const BannerImg = () => {
   return (
     <div className="banner">
-      <img src={img} alt="montagnes" className="bannerImg" />
+      <img src={img} alt="falaises" className="bannerImg" />
       <div className="mask"></div>
       <h1>
         <p>Chez vous,</p>
