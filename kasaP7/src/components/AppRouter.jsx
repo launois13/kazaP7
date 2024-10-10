@@ -1,7 +1,7 @@
 //import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Header from './Header';
-import Home from '../pages/Home'; // vérifier si la casse est correcte ici
+import Home from '../pages/Home'; 
 import About from '../pages/About';
 
 const AppRouter = () => {
@@ -10,7 +10,7 @@ const AppRouter = () => {
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/apropos" element={<About />} />
+        <Route path="/About" element={<About />} />
       </Routes>
     </Router>
   );

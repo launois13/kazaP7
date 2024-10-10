@@ -1,11 +1,15 @@
 @import "resets";
 @import "app";
+@import "home";
 @import "about";
+@import "error";
 @import "fonts";
 @import "header";
 @import "bannerImg";
 @import "gallery";
 @import "thumb";
+@import "collapsis";
+@import "error404";
 @import "footer";
 
 $font-family-base: 'Montserrat', sans-serif;

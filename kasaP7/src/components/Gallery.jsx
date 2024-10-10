@@ -3,11 +3,7 @@ const Gallery = () => {
   return (
     <div className="gallery">
       <Thumb/>
-      <Thumb/>
-      <Thumb/>
-      <Thumb/>
-      <Thumb/>
-      <Thumb/>
+      
     </div>
   );
 };

@@ -3,11 +3,8 @@ import Navigation from "./Navigation";
 const Header = () => {
   return (
     <header>
-    <img src={logo} alt="logo de kasa" />
-    <ul>
-      <li>Accueil</li>
-      <li>A propos</li>
-    </ul>
+    <img src={logo} alt="logo kasa" />
+    <Navigation />
     </header>
   );
 };
