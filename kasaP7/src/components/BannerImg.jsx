@@ -5,7 +5,7 @@ const BannerImg = () => {
       <img src={img} alt="falaises" className="bannerImg" />
       <div className="mask"></div>
       <h1>
-        <p>Chez vous,</p>
+        <p>Chez vous, </p>
         <p>partout et ailleurs</p>
       </h1>
     </div>

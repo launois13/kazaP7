@@ -1,5 +1,5 @@
 import BannerApropos from "../components/BannerApropos";
-import Collapsis from "../components/Collapsis";
+import Colapsis from "../components/Colapsis";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 const About = () => {
@@ -7,7 +7,7 @@ const About = () => {
     <div className="about">
       <Header/>
       <BannerApropos/> 
-      <Collapsis/>
+      <Colapsis/>
       <Footer/>
     </div>
   );
