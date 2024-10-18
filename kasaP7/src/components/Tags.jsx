@@ -1,9 +1,7 @@
   import PropTypes from 'prop-types';
 
-const Tags = (props) => {
-    return (
-        <p className="tags">{props.text}</p>
-    );
+const Tags = ({text}) => {
+    return <p className="tags">{text}</p>;
 };
 
 Tags.propTypes = {

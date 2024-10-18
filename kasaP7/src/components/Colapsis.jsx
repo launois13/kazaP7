@@ -1,9 +1,9 @@
 
 import PropTypes from 'prop-types';
-import React, { useState } from "react";
+import { useState } from "react";
 import svgFleche from "../assets/images/arrow.svg";
 
-const Colapsis = (props) => {
+const Colapsis = ({title,children}) => {
   const [isVisible, setIsVisible] = useState(false);
   const handleToggle = () => {
     setIsVisible(!isVisible);
@@ -12,7 +12,7 @@ const Colapsis = (props) => {
   return (
     <div className={`colapsis ${isVisible ? "visible" : ""}`}>
       <div className="headColapsis" onClick={handleToggle}>
-        <h3>{props.title}</h3>
+        <h3>{title}</h3>
         <img
           src={svgFleche}
           alt="flèche"
@@ -20,7 +20,7 @@ const Colapsis = (props) => {
         />
       </div>
       <div className={`paragraph ${isVisible ? "animate" : ""}`}>
-        {props.children}
+        {children}
       </div>
     </div>
   );

@@ -1,11 +1,13 @@
 .loc {
-    margin-top: 40px;
-    height: 80%;
-    border-radius: 25px;
-    max-width: 1240px;
-    margin: 0 auto;
+  margin-top: 40px;
+  height: 80%;
+  border-radius: 25px;
+  max-width: 1240px;
+  margin: 0 auto;
+  position: relative;
+  .caroussel {
     position: relative;
-    img {
+    .slider {
       width: 100%;
       height: 30vh;
       border-radius: 25px;
@@ -14,7 +16,7 @@
     }
     .arrowLeft {
       position: absolute;
-      top: 105px;
+      top: 140px;
       left: 0px;
       height: 78px;
       width: 46px;
@@ -23,82 +25,113 @@
     }
     .arrowRight {
       position: absolute;
-      top: 105px;
+      top: 140px;
       right: 0px;
       height: 78px;
       width: 46px;
       padding-right: 20px;
       cursor: pointer;
     }
-    .loc-container-left-right {
+    .slide-indicator {
+      position: absolute;
+      bottom: 7%;
+      right: 50%;
+      font-family: Montserrat;
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 26px;
+      color: white;
+    }
+  }
+  .loc-container-up-down {
+    display: flex;
+    flex-direction: column;
+    p {
+      color: #ff6060;
+      font-family: Montserrat;
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 142.6%;
+      margin: 0;
+    }
+    .loc-content-up {
       display: flex;
-      .loc-content-right {
-        width: 50%;
-        h2 {
-          color: #ff6060;
-          font-family: Montserrat;
-          font-size: 36px;
-          font-weight: 500;
-          margin: 10px 0 5px 0;
-        }
-        p {
-          color: #ff6060;
-          font-family: Montserrat;
-          font-size: 18px;
-          font-weight: 500;
-          line-height: 142.6%; /* 25.668px */
-          margin: 0;
-        }
-        .container-tags {
+      justify-content: space-between;
+      h2 {
+        max-width: 700px;
+        color: #ff6060;
+        font-family: Montserrat;
+        font-size: 36px;
+        font-weight: 500;
+        margin: 10px 0 5px 0;
+      }
+      h3 {
+        color: #ff6060;
+        font-family: Montserrat;
+        font-size: 18px;
+        font-weight: bold;
+        font-weight: 500;
+        line-height: 142.6%;
+      }
+      .container-tags {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+        .tags {
           display: flex;
-          gap: 10px;
-          .tags {
-            width: fit-content;
-            height: 25px;
-            background: #ff6060;
-            color: white;
-            border-radius: 10px;
-            text-align: center;
-            padding: 5px;
-          }
+          justify-content: center;
+          align-items: center;
+          width: fit-content;
+          height: fit-content;
+          background: #ff6060;
+          color: white;
+          border-radius: 10px;
+          text-align: center;
+          padding: 5px 30px;
+          font-size: 14px;
         }
       }
-      .loc-content-left {
-        width: 50%;
+      .hostRating {
         display: flex;
+        gap: 20px;
         flex-direction: column;
+        box-sizing: border-box;
         align-items: flex-end;
         .host {
           display: flex;
-          justify-content: center;
-          align-items: flex-end;
-          gap: 20px;
-          h3 {
-            color: #ff6060;
-            text-align: right;
-            font-family: Montserrat;
-            font-size: 18px;
-            font-weight: 500;
-            line-height: 142.6%;
-          }
           img {
             width: 64px;
             height: 64px;
+            border-radius: 50%;
           }
         }
-        .equipment{
-          h2 {
-            color: #ff6060;
-            font-family: Montserrat;
-            font-size: 36px;
-            font-weight: 500;
-            margin: 10px 0 5px 0;
-          }
-          li{
-            list-style: none;
-            color: #ff6060;
-          }
+        h3 {
+          color: #ff6060;
+          text-align: right;
+          font-family: Montserrat;
+          font-size: 18px;
+          font-weight: 500;
+          line-height: 142.6%;
+          margin-right: 10px;
+        }
+        .stars {
+          color: #ff6060;
+          font-size: 36px;
+        }
+        .starsGrey {
+          color: #e3e3e3;
+          font-size: 36px;
         }
       }
     }
+    .loc-content-down {
+      display: flex;
+      gap: 70px;
+      margin-top: 25px;
+      li {
+        list-style: none;
+        color: #ff6060;
+      }
+    }
   }
+}
