@@ -1,6 +1,6 @@
 header {
   display: flex;
-  margin:0 auto;
+  margin:0 auto 2rem;
   max-width: 1240px;
   flex-direction: row;
   width: 100%;
@@ -24,7 +24,7 @@ header {
       a {
         text-decoration: none;
         list-style: none;
-        color: #ff6060;
+        color: #000000;
         font-family: Montserrat;
         font-size: 1.5rem;
         font-style: normal;
