@@ -1,26 +1,32 @@
 header {
   display: flex;
-  margin:0 auto 2rem;
-  max-width: 1240px;
+  margin: 0 auto;
+  max-width: 1440px;
   flex-direction: row;
-  width: 100%;
+  width: 95%;
   justify-content: space-between;
   align-items: flex-end;
   padding-top: 15px;
+  padding-bottom: 20px;
+
   img {
+    // Réduction de la taille du logo sur les petits écrans
     @media screen and (max-width: 768px) {
       width: 120px;
     }
   }
+
   .navigation {
     ul {
       display: flex;
       justify-content: space-between;
       align-items: center;
       padding: 0;
-      @media screen and (max-width: 1024px) {
+
+      @media screen and (max-width: 1440px) {
         justify-content: space-around;
       }
+
       a {
         text-decoration: none;
         list-style: none;
@@ -28,16 +34,18 @@ header {
         font-family: Montserrat;
         font-size: 1.5rem;
         font-style: normal;
-        font-weight: bold;
+        font-weight: medium;
         margin-left: 50px;
         cursor: pointer;
+
         @media screen and (max-width: 768px) {
           font-size: 0.8rem;
           text-transform: uppercase;
           margin-left: 20px;
         }
+
         &.nav-underline {
-          text-decoration-line: underline;
+          text-decoration-line: underline; // Souligne le lien actif
         }
       }
     }

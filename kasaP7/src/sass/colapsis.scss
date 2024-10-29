@@ -1,10 +1,10 @@
 .colapsis {
   border-radius: 10px;
-  //margin-bottom: 10px;
   overflow: hidden;
-  max-width: 1023px;
+  max-width: 1023px; // Limite de largeur à garder en tête pour le design en 1440px
   width: 100%;
   margin: 0 auto 10px;
+
   .headColapsis {
     position: relative;
     display: flex;
@@ -13,46 +13,47 @@
     border-radius: 10px;
     overflow: hidden;
     z-index: 1;
+
     h3 {
       color: white;
       font-family: Montserrat;
       font-size: 18px;
       font-weight: 500;
       line-height: 26px;
-      letter-spacing: 0em;
       text-align: left;
       margin-left: 10px;
     }
-    .arrow{
+
+    .arrow {
       cursor: pointer;
       margin-right: 10px;
       transition: transform 0.4s ease;
-      &.down{
-        transform: rotate(180deg);
+
+      &.down {
+        transform: rotate(180deg); // Rotation de la flèche pour indiquer l'ouverture
       }
     }
   }
+
   .paragraph {
     background-color: #f6f6f6;
-    margin: 0;
     font-family: Montserrat;
     font-size: 18px;
     font-weight: 400;
     line-height: 26px;
-    letter-spacing: 0em;
     text-align: left;
     color: #000000;
-    transform: translateY(-100px);
+    transform: translateY(-100px); // Positionnement pour animation
     overflow: hidden;
     opacity: 0;
-    height:0;
+    height: 0;
     transition: all 0.6s ease-in-out;
     padding: 10px;
 
-    &.animate{
+    &.animate {
       opacity: 1;
       transform: translateY(0px);
-      height: max-content;
+      height: max-content; // Dévoilement du contenu lors de l'ouverture
     }
   }
 }

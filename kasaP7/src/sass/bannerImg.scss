@@ -1,30 +1,35 @@
-.banner{
+.banner {
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
-  border-radius: 1.5625rem;
+  border-radius: 1.5625rem; // Coins arrondis pour la bannière
   background: #F6F6F6;
   height: 223px;
-  max-width: 1240px;
-  margin: 0 auto 2rem; //Ajout d'une marge en bas de 2rem
-  @media screen and (max-width:1024px) {
-    height: 200px;
+  max-width: 1440px;
+  margin: 0 auto 2rem;
+
+  @media screen and (max-width: 1440px) {
+    height: 200px; // Hauteur réduite sur écran large intermédiaire
   }
-  @media screen and (max-width:768px) {
-    height: 111px;
+
+  @media screen and (max-width: 768px) {
+    height: 111px; // Hauteur réduite pour mobile
     border-radius: 10px;
-    margin: 0 0 1.5rem; // Ajustement pour les écrans mobiles
-   }
-  .bannerImg{
+    margin: 0 0 1.5rem; // Ajustement de la marge en bas
+  }
+
+  .bannerImg {
     border-radius: 1.5625rem;
-    object-fit: cover;
+    object-fit: cover; // Image couvre toute la bannière sans déformation
     width: 100%;
     height: 100%;
-    @media screen and (max-width:768px) {
-      border-radius: 10px;
-     }
+
+    @media screen and (max-width: 768px) {
+      border-radius: 10px; // Réduction du rayon des coins pour mobile
+    }
   }
+
   h1 {
     color: white;
     position: absolute;
@@ -35,44 +40,43 @@
     align-items: center;
     font-family: Montserrat;
     font-size: 3rem;
-  
+
     span {
-      margin-right: 0.3em; // Ajoute un espace après "Chez vous,"
+      margin-right: 0.3em; // Espace entre les lignes de texte en mode bureau
     }
-  
-    @media screen and (max-width: 1024px) {
-      font-size: 2.35rem;
+
+    @media screen and (max-width: 1440px) {
+      font-size: 2.35rem; // Taille de police réduite sur écran intermédiaire
       margin-left: 30px;
     }
-  
+
     @media screen and (max-width: 768px) {
       flex-direction: column;
       align-items: flex-start;
-      font-size: 2rem;
+      font-size: 2rem; // Taille de police plus petite sur mobile
       font-weight: 300;
-  
+
       span {
-        margin-right: 0; // Supprime l'espace en mode responsive
-        margin: 0;
-        padding: 0;
+        margin-right: 0; // Supprime l'espace entre les lignes de texte en mobile
       }
     }
-  
+
     @media screen and (max-width: 375px) {
-      font-size: 1.7rem;
+      font-size: 1.7rem; // Taille de police ajustée pour les très petits écrans
     }
   }
-  .mask{
+
+  .mask {
     position: absolute;
     height: 100%;
     width: 100%;
     border-radius: 1.5625rem;
-    opacity: 0.3;
+    opacity: 0.3; // Opacité pour un effet de masquage
     background: #000;
-    mix-blend-mode: darken;
-    @media screen and (max-width:768px) {
-    border-radius: 10px;
-     }
-  }
+    mix-blend-mode: darken; // Masque pour obscurcir l'image en arrière-plan
 
+    @media screen and (max-width: 768px) {
+      border-radius: 10px; // Coins plus petits sur mobile
+    }
+  }
 }

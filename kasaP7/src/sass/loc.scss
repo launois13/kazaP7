@@ -1,10 +1,10 @@
 .loc {
-  margin-top: 40px;
   height: 80%;
   border-radius: 25px;
-  max-width: 1240px;
+  max-width: 1440px;
   margin: 0 auto;
   position: relative;
+  width: 95%;
   .caroussel {
     position: relative;
     .slider {
@@ -22,6 +22,11 @@
       width: 46px;
       padding-left: 20px;
       cursor: pointer;
+      @media screen and (max-width:768px) {
+       height: 30px;
+       top: 165px;
+       padding-left: 10px;
+       }
     }
     .arrowRight {
       position: absolute;
@@ -31,6 +36,11 @@
       width: 46px;
       padding-right: 20px;
       cursor: pointer;
+      @media screen and (max-width:768px) {
+        height: 30px;
+        top: 165px;
+        padding-right: 10px;
+        }
     }
     .slide-indicator {
       position: absolute;
@@ -53,10 +63,16 @@
       font-weight: 500;
       line-height: 142.6%;
       margin: 0;
+      @media screen and (max-width: 768px) {
+        font-size: 14px;
+      }
     }
     .loc-content-up {
       display: flex;
       justify-content: space-between;
+      @media screen and (max-width: 768px) {
+        flex-direction: column;
+      }
       h2 {
         max-width: 700px;
         color: #ff6060;
@@ -64,9 +80,12 @@
         font-size: 36px;
         font-weight: 500;
         margin: 10px 0 5px 0;
+        @media screen and (max-width: 768px) {
+          font-size: 18px;
+        }
       }
       h3 {
-        color: #ff6060;
+        color: #000000;
         font-family: Montserrat;
         font-size: 18px;
         font-weight: bold;
@@ -97,6 +116,12 @@
         flex-direction: column;
         box-sizing: border-box;
         align-items: flex-end;
+        @media screen and (max-width: 768px) {
+          flex-direction: row-reverse;
+          justify-content: space-between;
+          align-items: center;
+          padding: 20px 0;
+        }
         .host {
           display: flex;
           img {
@@ -113,14 +138,23 @@
           font-weight: 500;
           line-height: 142.6%;
           margin-right: 10px;
+          @media screen and (max-width: 768px) {
+            font-size: 14px;
+          }
         }
         .stars {
           color: #ff6060;
-          font-size: 36px;
+          height: 36px;
+          @media screen and (max-width: 768px) {
+            height: 18px;
+          }
         }
         .starsGrey {
           color: #e3e3e3;
-          font-size: 36px;
+          height: 36px;
+          @media screen and (max-width: 768px) {
+            height: 18px;
+          }
         }
       }
     }
@@ -128,9 +162,16 @@
       display: flex;
       gap: 70px;
       margin-top: 25px;
+      @media screen and (max-width: 768px) {
+        flex-direction: column;
+        gap: 0;
+        align-items: center;
+        padding: 10px 0;
+        margin-top: 0;
+      }
       li {
         list-style: none;
-        color: #ff6060;
+        color: #000000;
       }
     }
   }

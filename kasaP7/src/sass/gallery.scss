@@ -1,26 +1,27 @@
-.gallery{
+.gallery {
   width: 100%;
-  border-radius: 25px;
-  background: #F6F6F6;
-  display: grid;
+  border-radius: 25px; // Coins arrondis pour l'ensemble de la galerie
+  background: #F6F6F6; // Fond gris clair pour la galerie
+  display: grid; // Disposition en grille
   justify-content: center;
   align-items: center;
-  grid-template-columns: repeat(3,28%);
+  grid-template-columns: repeat(3, 28%); // Trois colonnes avec 28% de largeur chacune
   grid-template-rows: auto;
-  gap: 50px;
+  gap: 50px; // Espacement entre les vignettes
   padding: 50px 0;
   margin: 0 auto;
-  max-width: 1240px;
-  @media screen and (max-width:1024px) {
-    grid-template-columns: repeat(2,45%);
+  max-width: 1440px;
 
-   }
-  @media screen and (max-width:768px) {
+  @media screen and (max-width: 1440px) {
+    grid-template-columns: repeat(2, 45%); // Réduit à deux colonnes sur écran moyen
+  }
+
+  @media screen and (max-width: 768px) {
     display: flex;
-    flex-direction: column;
-    gap: 20px;
-    padding: 0 0;
+    flex-direction: column; // Passe en colonne sur mobile
+    gap: 20px; // Réduction de l'espacement entre les éléments
+    padding: 0;
     margin-bottom: 25px;
-    background: none;
-   }
+    background: none; // Suppression du fond en mode mobile
+  }
 }
